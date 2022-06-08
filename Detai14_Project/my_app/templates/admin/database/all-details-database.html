@@ -1,0 +1,81 @@
+{% extends 'admin/master.html' %}
+
+{% block body %}
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        <div class="col-12">-->
+<!--            <div class="card">-->
+<!--                <div class="card-body text-center">-->
+<!--                    <h4 style="font-weight: bold; color: black;">{{nameDatabase}}</h4>-->
+<!--                </div>-->
+<!--                <div class="table-responsive">-->
+<!--                    {% for item in range(quantityTable)%}-->
+<!--                    <p style = "position: relative; margin-left: 30px; color: #2e86de; font-size: 15px;">Table: {{allTable[item]}}</p>-->
+<!--                    <table class="table">-->
+<!--                        <thead class="thead-light">-->
+<!--                        <tr>-->
+<!--                            {% for index in range(allQuantityColumn[item]) %}-->
+<!--                                <th scope="col">{{allColumnInTable[item][index]}}</th>-->
+<!--                            {% endfor %}-->
+<!--                        </tr>-->
+<!--                        </thead>-->
+<!--                        <tbody>-->
+<!--                        {% for row in range(allRowTable[item]) %}-->
+<!--                        <tr>-->
+<!--                            {% for column in range(allQuantityColumn[item]) %}-->
+<!--                                <th scope="col" style="color: #57606f;">{{allDataTable[item][row][column]}}</th>-->
+<!--                            {% endfor %}-->
+<!--                        </tr>-->
+<!--                        {% endfor %}-->
+<!--                        </tbody>-->
+<!--                    </table>-->
+<!--                    {% endfor %}-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h4 style="font-weight: bold; color: black;">{{nameDatabase}}</h4>
+                </div>
+                <div class="table-responsive">
+
+                    <p style = "position: relative; margin-left: 30px; color: #2e86de; font-size: 15px;">Table: Users</p>
+
+                    <table class="table">
+                        <thead class="thead-light">
+                        <tr>
+                            <th style = "position: relative; padding-left: 70px; color: #2e86de; font-size: 15px;" >Id</th>
+                            <th style = "position: relative; padding-left: 70px; color: #2e86de; font-size: 15px;" >Type: INT</th>
+                        </tr>
+                        <tr>
+                            <th style = "position: relative; padding-left: 70px; color: #2e86de; font-size: 15px;" >Name</th>
+                            <th style = "position: relative; padding-left: 70px; color: #2e86de; font-size: 15px;" >Type: CHAR</th>
+                        </tr>
+                        <tr>
+                            <th style = "position: relative; padding-left: 70px; color: #2e86de; font-size: 15px;" >Email</th>
+                            <th style = "position: relative; padding-left: 70px; color: #2e86de; font-size: 15px;" >Type: CHAR</th>
+                        </tr>
+                        <tr>
+                            <th style = "position: relative; padding-left: 70px; color: #2e86de; font-size: 15px;" >Country</th>
+                            <th style = "position: relative; padding-left: 70px; color: #2e86de; font-size: 15px;" >Type: CHAR</th>
+                        </tr>
+
+                        </thead>
+
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
